@@ -21,41 +21,25 @@
         <div class="subsubtitle">CPF:</div>
         <div>
           <b-form-input
-            placeholder="Ex.: 000.000.000-00"
+            placeholder="Ex: 000.000.000-00"
             class="form-control cpf-mask"
             maxlength="14"
           ></b-form-input>
         </div>
         <div class="subsubtitle">RG:</div>
         <div>
-          <b-form-input placeholder="Insira seu RG:"></b-form-input>
-        </div>
-        <div class="subsubtitle">Estado:</div>
-        <div>
-          <b-form-input placeholder="Insira seu estado:"></b-form-input>
-        </div>
-        <div class="subsubtitle">Cidade:</div>
-        <div>
-          <b-form-input placeholder="Insira sua cidade:"></b-form-input>
-        </div>
-        <div class="subsubtitle">CEP:</div>
-        <div>
           <b-form-input
-            class="form-control cep-mask"
-            placeholder="Ex.: 00000-000"
-            maxlength="9"
+            placeholder="Ex: 0.000.000"
+            class="form-control rg-mask"
           ></b-form-input>
+        </div>
+        <div class="subsubtitle">Endereço:</div>
+        <div>
+          <b-form-input placeholder="Insira seu endereço:"></b-form-input>
         </div>
         <div class="subsubtitle">Complemento:</div>
         <div>
           <b-form-input placeholder="Insira seu complemento"></b-form-input>
-        </div>
-        <div class="subsubtitle">Nº</div>
-        <div>
-          <b-form-input
-            v-model.number="Numero"
-            placeholder="Insira o Nº:"
-          ></b-form-input>
         </div>
       </b-col>
       <b-col class="col2">
@@ -68,8 +52,12 @@
         >
           <b-dropdown-item>Cartão de débito</b-dropdown-item>
           <b-dropdown-item href="/pix">PIX</b-dropdown-item>
-          <b-dropdown-item>Boleto</b-dropdown-item>
+          <b-dropdown-item href="/boleto">Boleto</b-dropdown-item>
         </b-dropdown>
+        <div class="subsubtitle">Nome do titular</div>
+        <div>
+          <b-form-input placeholder="Digite o nome do titular"></b-form-input>
+        </div>
         <div class="subsubtitle">Numero do Cartão</div>
         <div>
           <b-form-input placeholder="Digite o numero do cartão"></b-form-input>
@@ -239,7 +227,7 @@ body {
   transition-duration: 0.3s;
   text-decoration: none;
   font-size: 20px;
-  margin: 5% 0 0 0%;
+  margin: 1% 0 0 0%;
   width: 190px;
   height: 50px;
 }

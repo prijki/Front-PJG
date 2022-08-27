@@ -38,6 +38,12 @@ const routes = [
         component: () =>
           import(/* webpackChunkName: "about" */ "../views/Pix.vue"),
       },
+      {
+        path: "/boleto",
+        name: "/boleto",
+        component: () =>
+          import(/* webpackChunkName: "about" */ "../views/Boleto.vue"),
+      },
     ],
   },
   {
