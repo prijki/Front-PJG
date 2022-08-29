@@ -1,13 +1,16 @@
 import Vue from "vue";
 import App from "./App.vue";
-import { createApp } from "vue";
+
 import router from "./router";
 import "./plugins/bootstrap";
 import "./plugins/firebase";
 import "./assets/css/main.css";
 import { createPinia } from "pinia";
+import VueAxios from "vue-axios";
+import axios from "axios";
 
 Vue.config.productionTip = false;
+Vue.prototype.$http = axios;
 
 new Vue({
   router,
@@ -15,3 +18,5 @@ new Vue({
 }).$mount("#app");
 
 createApp(App).use(createPinia()).mount("#app");
+
+Vue.use(VueAxios, axios);

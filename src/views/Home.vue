@@ -1,24 +1,23 @@
 <template>
-  <section>
-    <div class="card-group">
-      <PlantaHome v-for="planta in plantas" :key="planta.id" :card="planta" />
-    </div>
-  </section>
+  <div :v-for="planta in plantas" :key="planta.id"></div>
 </template>
 
 <script>
 import axios from "axios";
-import PlantaHome from "@/layouts/PlantaHome.vue";
 export default {
-  components: { PlantaHome },
+  name: "app",
   data() {
     return {
-      plantas: [],
+      planta: [],
     };
   },
-  async created() {
-    const plantas = await axios.get("http://177.74.210.90/plantas/");
-    this.plantas = plantas.data;
+  methods: {
+    fetchUsers: function () {
+      const baseURI = "http://127.0.0.1:8000/plantas/";
+      axios.get(baseURI).then((result) => {
+        this.plantas = result.data;
+      });
+    },
   },
 };
 </script>
