@@ -43,7 +43,7 @@ export default {
 
 <style>
 .row {
-  margin: 5% 0 0 0;
+  margin: 5% 0 5% 0;
 }
 .pix {
   width: 90%;
@@ -127,5 +127,77 @@ img {
 }
 .icon {
   margin: 0 0 0 25%;
+}
+
+@media (max-width: 390px){
+  #footer {
+    color: #3e9661;
+    font-size: 16px;
+    margin: 5% 0 1% 0;
+  }
+  .pix {
+  width: 100%;
+  height: 87vh;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  margin: 5% 0 0 0;
+  }
+  h4 {
+  color: #ff691e;
+  font-weight: bold;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  margin: 5% 10% 5% 10%;
+  text-align: center;
+  }
+  h5{
+    color: grey;
+    font-style: normal;
+    font-family: "Roboto", sans-serif;
+    margin: 5% 5% 5% 5%;
+    font-size: 1.05rem;
+    text-align: center;
+  }
+  .btn {
+  background: linear-gradient(
+    90deg,
+    rgba(23, 184, 144, 1) 0%,
+    rgba(1, 94, 57, 1) 100%
+  );
+  justify-content: center;
+  border: 0px solid transparent;
+  border-radius: 6px;
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  outline: 0;
+  box-sizing: border-box;
+  transition-property: all;
+  transition-duration: 0.3s;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 5% 27% 0 26%;
+  width: 20vh;
+  height: 6vh;
+  }
+  .segundoPix {
+  display: block;
+  margin: 5% 0 0 0;
+  }
+  #textarea {
+  margin: 5% 4% 0 4%;
+  border: 1px solid lightgray;
+  height: 14vh;
+  border-radius: 7px;
+  padding: 5px;
+  max-width: 39vh;
+  }
+  img {
+    width: 30vh;
+    height: 30vh;
+    margin: 0 0 0 14%;
+  }
 }
 </style>
