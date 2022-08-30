@@ -48,20 +48,27 @@
 <script>
 import axios from "axios";
 export default {
-  name: "app",
+  name: "Planta",
   data() {
     return {
       planta: {},
       plantas: [],
     };
   },
-  methods: async function Plantas() {
-    try {
-      const planta = await axios.get("http://127.0.0.1:8000/plantas/");
-      return planta.data;
-    } catch (error) {
-      console.log(error);
-    }
+  created() {
+    this.getPlanta();
+  },
+  methods: {
+    getPlanta() {
+      axios
+        .get("http://127.0.0.1:8000/plantas/")
+        .then((res) => {
+          this.planta = res.data;
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    },
   },
 };
 </script>

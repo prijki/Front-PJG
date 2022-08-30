@@ -17,5 +17,6 @@ new Vue({
 }).$mount("#app");
 
 createApp(App).use(createPinia()).mount("#app");
+createApp(App).use(router).mount("#app");
 
 Vue.use(VueAxios, axios);
