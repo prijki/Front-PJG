@@ -137,7 +137,7 @@ img {
   }
   .pix {
   width: 100%;
-  height: 87vh;
+  height: 86vh;
   border: 1px solid lightgray;
   border-radius: 10px;
   margin: 5% 0 0 0;
