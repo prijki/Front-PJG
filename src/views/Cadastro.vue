@@ -149,16 +149,15 @@ body {
   text-align: center;
   font-weight: 500;
   margin: 2% 0 0 0;
-  color: #067c5f;
+  color: #086a52;
 }
 .btncad {
-  background: #00bf8f; /* fallback for old browsers */
   background: -webkit-(
     to top,
-    #001510,
-    #00bf8f
+    #086a63,
+    #086a52
   ); /* Chrome 10-25, Safari 5.1-6 */
-  background: #00bf8f; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #086a52; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border: 0;
   padding: 10px;
   margin: 10% 0 0 35%;
@@ -166,6 +165,9 @@ body {
   font-size: 20px;
   border-radius: 4px;
   font-family: "Roboto", sans-serif;
+}
+.btncad:hover {
+  background-color: #024435;
 }
 .btncad::after {
   border: 0;
@@ -230,7 +232,7 @@ body {
   margin: 2% 0 0 0;
 }
 a {
-  color: #0000cd;
+  color: #00bf8f;
   text-decoration: none;
   font-size: 15px;
   font-weight: 600;
@@ -238,44 +240,70 @@ a {
   margin: 20% 0 0 0%;
 }
 a:hover {
-  color: #0000cd;
+  color: #086a52;
   opacity: 50%;
   text-decoration: none;
 }
 
 @media (max-width: 844px) {
-  .cform {
-    width: 350px;
-    margin: 65% 0 0 0;
-  }
-  .form-control {
-    margin: 3% 0% 0 0%;
-    padding: 1px;
-  }
 
-  .titulo {
-    margin: 5% 0 0 20%;
+body{
+  background-color: #001510;
+}
+.cform {
+  width: 340px;
+  margin: 0% 0% 0 0;
+  padding: 59px;
+}
+.form-control {
+  margin: 3% 5% 0 0%;
+  padding: 1px;
+}
+
+.titulo {
+  margin: 15% 0 0 20%;
+}
+.row {
+  margin: 0% 20% 0% 2%;
+}
+.container-fluid {
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+.buttons {
+  display: flex;
+  margin: 5% 25% 0 0;
+}
+.btncad {
+  padding: 10px;
+  height: 50px;
+  width: 110px;
+}
+.logo img {
+    width: 200px;
+    height: 200px;
   }
-  .row {
-    margin: 0% 30% 0% 0%;
+  .logo{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  .container-fluid {
-    width: 100%;
-    padding-right: 0;
-    padding-left: 0;
-    margin-right: 0;
-    margin-left: 0;
-  }
-  .buttons {
-    margin: 10% 50% 0 0;
-  }
-  .btncad {
+  .col {
     padding: 10px;
-    height: 50px;
+    margin: 0 2% 0 0;
   }
-  .emsen {
-    margin: 9% 0% 0 0;
-    text-align: left;
-  }
+ 
+.login-page {
+  font-family: Jomolhari;
+  height: 129vh;
+  display: flex;
+  padding: 0;
+  margin: 0 10% 0 0;
+}
+
 }
 </style>

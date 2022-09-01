@@ -94,7 +94,6 @@ export default {
 }
 
 .login-page {
-  height: 100vh;
   font-family: Jomolhari;
 }
 .cform {
@@ -111,6 +110,7 @@ span {
   padding: 0 10px;
 }
 body {
+  width: 100%;
   background: #00bf8f; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to top,
@@ -122,16 +122,18 @@ body {
     #001510,
     #00bf8f
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-repeat: no-repeat;
+  height:100vh ;
+  
 }
 .dlogin {
   font-size: 35px;
   line-height: 29px;
   text-align: center;
-  margin: 5% 0 0 0;
-  color: #067c5f;
+  color: #086a52;
 }
 a {
-  color: #0000cd;
+  color: #00bf8f;
   text-decoration: none;
   font-size: 15px;
   font-weight: 600;
@@ -139,18 +141,17 @@ a {
   font-family: "Roboto", sans-serif;
 }
 a:hover {
-  color: #0000cd;
+  color: #102b1a;
   opacity: 50%;
   text-decoration: none;
 }
 .btncad {
-  background: #00bf8f; /* fallback for old browsers */
   background: -webkit-(
     to top,
-    #001510,
-    #00bf8f
+    #086a63,
+    #086a52
   ); /* Chrome 10-25, Safari 5.1-6 */
-  background: #00bf8f; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #086a52; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border: 0;
   padding: 10px;
   width: 130px;
@@ -160,7 +161,7 @@ a:hover {
   font-family: "Roboto", sans-serif;
 }
 .btncad:hover {
-  background-color: #3e9661;
+  background-color: #024435;
 }
 .emsen {
   padding: 8px;
@@ -168,13 +169,12 @@ a:hover {
   font-size: 20px;
 }
 .btncad2 {
-  background: #00bf8f; /* fallback for old browsers */
   background: -webkit-(
     to top,
-    #001510,
-    #00bf8f
+    #086a63,
+    #086a52
   ); /* Chrome 10-25, Safari 5.1-6 */
-  background: #00bf8f; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #086a52; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border: 0;
   padding: 10px;
   width: 150px;
@@ -185,7 +185,7 @@ a:hover {
   font-family: "Roboto", sans-serif;
 }
 .btncad2:hover {
-  background-color: #3e9661;
+  background-color: #024435;
 }
 .titulo {
   position: absolute;
@@ -211,9 +211,13 @@ input:-internal-autofill-selected {
 }
 
 @media (max-width: 844px) {
+
+  body{
+    background-color: #001510;
+  }
   .cform {
-    width: 350px;
-    margin: 70% 0% 0 0;
+    width: 340px;
+    margin: 0% 0% 0 0;
   }
   .form-control {
     margin: 3% 5% 0 0%;
@@ -246,5 +250,19 @@ input:-internal-autofill-selected {
     padding: 10px;
     height: 50px;
   }
+  .logo img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .logo{
+    align-items: center;
+  }
+  .col {
+  
+    padding: 10px;
+    margin: 0 20% 0 0;
+  }
+ 
 }
 </style>

@@ -74,9 +74,10 @@ export default {
 </script>
 
 <style>
+
 a.btn.btn1.btn-primary {
-  background: rgb(21, 213, 165);
-  background: linear-gradient(7deg, rgb(29, 88, 59) 0%, rgb(65, 161, 123) 66%);
+  background: #15d5a5;
+  background: linear-gradient(7deg, #1d583b 0%, #41a17b 66%);
   border-radius: 5px;
   border: 0;
   padding: 10px;
@@ -86,14 +87,22 @@ a.btn.btn1.btn-primary {
   font-weight: bold;
   white-space: nowrap;
 }
+
 a.btn.btn1.btn-primary:hover {
   background: #328051a1;
 }
 .imgpr {
-  width: 100%;
-}
-.card-img-top {
+  width: 300px;
   height: 300px;
+}
+.card{
+  height: 400px;
+  width: 400px;
+}
+
+.card-img-top { 
+  height: 300px;
+  width: 300px;
   border-radius: 3px;
 }
 .titlep {
@@ -128,6 +137,7 @@ a.btn.btn1.btn-primary:hover {
   opacity: 100%;
   font-family: "Josefin Sans", sans-serif;
   text-align: left;
+  max-width: 306px;
   font-size: 21px;
   font-weight: bold;
   white-space: nowrap;

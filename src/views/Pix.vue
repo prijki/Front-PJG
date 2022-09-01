@@ -199,5 +199,27 @@ img {
     height: 30vh;
     margin: 0 0 0 14%;
   }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+  .row h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0;
+}
+.navbar-toggler {
+
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: #47ac5b;
+    border: 1px solid transparent;
+
+}
 }
 </style>
