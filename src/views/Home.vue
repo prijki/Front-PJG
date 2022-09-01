@@ -180,7 +180,7 @@ a.btn.btn1.btn-primary:hover {
     margin: 0 0 30% 0;
   }
   #footer {
-    margin: 0 0 0 5%;
+    margin: 0% 10% 10% 0%;
     display: flex;
   }
   .titlepl {
@@ -198,7 +198,7 @@ a.btn.btn1.btn-primary:hover {
   }
   .col {
     padding: 20px;
-    margin: 0 20% 0 0;
+    margin: 0px 8% -5px -50px;
   }
   .card {
     margin-left: 50px;

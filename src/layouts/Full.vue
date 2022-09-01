@@ -212,7 +212,7 @@ ul.dropdown-menu.show {
   #footer {
     color: #3e9661;
     font-size: 16px;
-    margin: 10% 10% 10% 10%;
+    margin: 0% 10% 10% 0%;
   }
   .footer1 {
     margin: 5%;
