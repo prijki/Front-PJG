@@ -321,24 +321,30 @@ img {
 @media (max-width: 390px) {
   .row {
     border: 0;
-    width: 390px;
+    width: 350px;
+    height:100vh;
+    margin: 4% 5%;
+    flex-direction: column;
+  }
+  .produto{
+    padding: 1%;
   }
   .col1 {
-    width: 390px;
+    width: 395px;
     box-shadow: none;
     border-style: solid none solid none;
     border-color: #0f3406;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    
   }
   .navpr {
     box-shadow: none;
   }
-  .produto {
-    padding: 0;
-    height: 1150px;
-  }
-  .img {
-    width: 390px;
-    height: 390px;
+  img {
+    width: 345px;
+    height: 345px;
   }
   .col2 {
     width: 390px;
@@ -346,12 +352,12 @@ img {
     height: 100px;
     margin: 0;
     padding: 0;
+    margin: 0%;
   }
   .dprincipal {
     width: 390px;
   }
   .nome {
-    margin: 15% 0 0 0;
     text-align: center;
   }
   .btncad {
@@ -360,7 +366,7 @@ img {
   #footer {
     color: #3e9661;
     font-size: 16px;
-    margin: 10% 10% 10% 10%;
+    margin: 5% 0 1% 0;
   }
   .footer1 {
     margin: 5%;
@@ -374,6 +380,28 @@ img {
   }
   .container {
     width: 0%;
+  }
+  .Comentarios{
+    border: 0;
+    width: 350px;
+    height:100vh;
+    margin: 4% 5%;
+    flex-direction: column;
+  }
+  .TituloComentario{
+    text-align: center;
+  }
+  .FazerComentario{
+    width: 350px;
+    height: 200px;
+    display: flex;
+  }
+  #textarea{
+    width: 270px;
+  }
+  .BotaoComentario{
+    width: 80px;
+    height: 40px;
   }
 }
 </style>
