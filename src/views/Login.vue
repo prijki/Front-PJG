@@ -13,6 +13,7 @@
             <div class="emsen">Email:</div>
             <b-form-group id="input-group-1">
               <b-form-input
+                append-icon="eye-fill"
                 v-model="form.email"
                 type="email"
                 style="
@@ -22,12 +23,12 @@
                 "
                 placeholder="Insira seu email"
               >
-              </b-form-input>
+            </b-form-input>
             </b-form-group>
             <div class="emsen">Senha:</div>
             <b-form-group id="input-group-1">
               <b-form-input
-                type="password"
+                :type="Mostrarsenha ? 'text' : 'password'"
                 v-model="form.password"
                 required
                 style="
@@ -36,9 +37,10 @@
                   border-color: rgba(62, 150, 97, 0.95);
                 "
                 placeholder="Insira sua senha"
+                append-icon="eye-fill"
               >
-                <b-icon icon="eye" variant="danger"></b-icon
-              ></b-form-input>
+              >
+            </b-form-input>
             </b-form-group>
             <div class="Ircad">
               <a href="/cadastro"> Não tem conta? Crie a sua aqui </a>
@@ -58,6 +60,7 @@
 export default {
   data() {
     return {
+      Mostrarsenha: true ,
       form: {
         email: "",
         password: "",
@@ -78,6 +81,7 @@ export default {
       }
     },
   },
+  
 };
 </script>
 
